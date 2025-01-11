@@ -1,0 +1,84 @@
+page1.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Personal Details</title>
+</head>
+<body>
+    <h1>Job Application - Personal Details</h1>
+    <form action="page2.html">
+        <label >Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label >Address:</label>
+        <textarea name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label >Contact Info:</label>
+        <input type="tel" name="contact" required><br><br>
+
+        <button type="button" onclick="window.location.href='page2.html'">Next</button>
+    </form>
+</body>
+</html>
+
+page2.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Educational Background</title>
+</head>
+<body>
+    <h1>Job Application - Educational Background</h1>
+    <form action="page3.html">
+        <label >Degree:</label>
+        <input type="text"  name="degree" required><br><br>
+
+        <label >Year of Passing:</label>
+        <input type="number"  name="year" required><br><br>
+
+        <label >Institution Name:</label>
+        <input type="text"  name="institution" required><br><br>
+
+        <button type="button" onclick="window.location.href='page1.html'">Previous</button>
+        <button type="button" onclick="window.location.href='page3.html'">Next</button>
+    </form>
+</body>
+</html>
+
+page3.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Work Experience</title>
+</head>
+<body>
+    <h1>Job Application - Work Experience</h1>
+    <form action="submit.html" method="post" enctype="multipart/form-data">
+        <label >Company Name:</label>
+        <input type="text"  name="company" required><br><br>
+
+        <label>Designation:</label>
+        <input type="text" name="designation" required><br><br>
+
+        <label>Duration:</label>
+        <input type="text" name="duration" required><br><br>
+
+        <label>Upload Resume:</label>
+        <input type="file" name="resume" required><br><br>
+
+        <button type="button" onclick="window.location.href='page2.html'">Previous</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+</head>
+<body>
+    <h1>Travel Booking Form</h1>
+    <form>
+        <label >Full Name:</label>
+        <input type="text"  name="full_name" required><br><br>
+
+        <label >Contact Information:</label>
+        <input type="text"  name="contact_info" required><br><br>
+
+        <label >Destination:</label>
+        <select  name="destination">
+            <option value="chennai">Chennai</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+        </select><br><br>
+
+        <label>Travel Dates:</label>
+        <input type="date" name="travel_dates" required><br><br>
+
+        <label >Number of Travelers:</label>
+        <input type="number"  name="travelers" min="1" value="1" required><br><br>
+
+        <label>Travel Class:</label>
+        <input type="radio"  name="travel_class" value="Economy" required> Economy
+        <input type="radio"  name="travel_class" value="Business" required> Business
+        <input type="radio"  name="travel_class" value="First Class" required> First Class<br><br>
+
+        <input type="checkbox"  name="travel_insurance"> Opt for Travel Insurance<br><br>
+
+        <p >Total Cost: --</p><br>
+
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>
