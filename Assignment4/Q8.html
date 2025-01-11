@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Submission Form</title>
+</head>
+<body>
+    <h1>Online Quiz Submission Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <p>Question 1: What is the capital of India?</p>
+        <input type="radio" id="paris" name="question1" value="Chennai" required> Chennai<br>
+        <input type="radio" id="london" name="question1" value="Mumbai" required> Mumbai<br>
+        <input type="radio" id="rome" name="question1" value="Delhi" required> Delhi<br>
+        <input type="radio" id="berlin" name="question1" value="Agra" required> Agra<br><br>
+
+        <p>Question 2: Which of the following are programming languages?</p>
+        <input type="checkbox" id="java" name="question2" value="Java"> Java<br>
+        <input type="checkbox" id="html" name="question2" value="HTML"> HTML<br>
+        <input type="checkbox" id="css" name="question2" value="CSS"> CSS<br>
+        <input type="checkbox" id="python" name="question2" value="Python"> Python<br><br>
+
+        <p id="timer">Time Remaining: --</p><br>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
